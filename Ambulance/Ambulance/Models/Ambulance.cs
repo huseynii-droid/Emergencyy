@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Text;
 
 namespace Ambulance
 {
@@ -13,21 +10,18 @@ namespace Ambulance
         public string DriverName { get; set; }
         public bool IsAvailable { get; set; } = true;
 
-        public Ambulance(string plateNumber , string driverName)
+        public Ambulance(string plateNumber, string driverName)
         {
             _counter++;
-            Id=_counter;
-
+            Id = _counter;
             PlateNumber = plateNumber;
-            DriverName= driverName;
-
+            DriverName = driverName;
         }
-        public void SetAvailability(bool value )
+
+        public void SetAvailability(bool value)
         {
             IsAvailable = value;
         }
-
-
-
     }
 }
+
